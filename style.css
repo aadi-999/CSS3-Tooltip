@@ -1,0 +1,70 @@
+a.tooltip {
+  outline: none;
+}
+
+a.tooltip:hover {
+  text-decoration: none;
+  text-align: center;
+  font-family: "MarkPro", sans-serif;
+}
+
+a.tooltip span {
+  z-index: 10;
+  display: none;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: -63px;
+  width: 80px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #000;
+}
+
+a.tooltip:hover span {
+  display: inline;
+  position: absolute;
+}
+
+.arrow_box {
+  position: relative;
+  background: #f2f2f2;
+  border: 2px solid #333;
+}
+
+.arrow_box:after,
+.arrow_box:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-color: rgba(88, 118, 138, 0);
+  border-bottom-color: #f2f2f2;
+  /*bg-color*/
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+.arrow_box:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #333;
+  border-width: 13px;
+  margin-left: -13px;
+}
+
+.swatch-box {
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  float: left;
+  margin-right: 5px;
+  border-radius: 20px;
+}
